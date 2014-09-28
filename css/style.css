@@ -1,0 +1,406 @@
+/* They styles in the following are similar to the effect of a reset but have be separated out so that it is easier to add default styles.  These are suggested styles that the designer should change and add to set the typography 
+
+
+
+Much of this is modified from two original sources
+HTML 5 Doctor Reset: http://html5doctor.com/html-5-reset-stylesheet/
+This is in the public domain. It has been modified to remove things redundant with Normalize and separate out styles that may need to be styled separately.
+
+Normalize.css: git.io/normalize 
+The version modified is: normalize.css v3.0.1 | MIT License
+A few pieces of normalize.css that more directly affected typographic choices (such as font-family) were moved here so normalize.css could be more or less left alone.
+*/
+
+/*The following 7 lines are from Paul Irish and apply a border-box model. 
+See this page for more info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* apply a natural box layout model to all elements, but allowing components to change */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/*
+Set a default font-family, font-size and line-height in the body
+This will set the default for the entire site.
+*/
+body{
+    font-family: 'Roboto Slab', serif; /*change to add a proper font stack */
+    font-size: 1em;
+    line-height: 1.3; /* usually something between 1.3 and 1.6 is most readable without feeling too far apart */
+    background-color:white;
+
+}
+
+/*Usually at least a bottom margin is given to separate paragraphs. font-size and font-family are inherited from body*/
+p{
+    margin: 0 0 0 0;
+}
+
+.time {
+    font-family:'Josefin Sans', sans-serif;
+    color:#FA6900;
+    font-size:1.7em;
+    text-transform: uppercase;
+    text-align:center;
+    padding:.5em;
+    margin:1em 2em 1em 2em;
+    border:1px solid #a8a8a8;
+    background-color:white;
+}
+.room {
+    font-family:'Josefin Sans', sans-serif;
+    font-size:1.2em;
+    letter-spacing: .1em;
+    padding:1em 0 0 0;
+    text-transform: uppercase;
+    text-align:center;
+    color:black;
+    
+}
+
+.session-title {
+    text-align:center;
+    color:#db6104;
+    background-color:;
+    font-family: 'Roboto Slab', serif;
+    font-size:1.3em;
+}
+
+header>h1 {
+    font-family:'Montserrat','Helvetica',sans-serif;
+    text-align:center;
+    color:white;
+    letter-spacing:.05em;
+    padding:1em 0 0 0;
+    margin-top:0em; /* eliminates gap with color block*/
+}
+header>p {
+    font-family:'Lato','Helvetica',sans-serif;
+    font-size:1.1em;
+    letter-spacing: .1em;
+    font-weight:400;
+    text-transform:uppercase;
+    color:#042e40;
+    text-align:center;
+    padding: 0 1em 1em 1em;
+    margin:0;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/* links and visited links have default colors and underline */
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    color:white;
+    text-decoration: none; /*this controls if the underline is showing */
+    
+    /* some people choose to use a bottom border in place of an underline because it doesn't cut through the descenders in letters like gyjp */
+    /* border-bottom: 1px solid #000; */
+}
+
+a:hover{
+    color:white;
+    /* if you set bottom-border on a{} above then remember to change the color here */
+    border-bottom: 3px solid #69D2E7;
+}
+
+/* it can help with usability if you give visited links a diffefrent color than unvisited ones (even if just a different shade)*/
+a:visited{
+    color:white;
+    
+    /* Again, if you set bottom-border on a{} then remember to change the color here too*/
+    /* border-bottom: 1px solid #000; */
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:10px solid #a8a8a8;
+    margin:0;
+    padding:0 0 3em 0;
+}
+
+/*Set a default font-family for the headings*/
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif; /*change to add a proper font stack */
+    font-weight:300;
+    color:#474747;
+    text-transform: uppercase;
+    line-height:1.3;
+}
+
+/*
+Set the font-size of each heading individually
+When you set the font-size also set the line-height.
+You may also want to set the top and bottom margins and padding
+*/
+h1{
+    font-size:3.998em;
+    line-height: 1em;
+    letter-spacing:.02em;
+    padding:1em 0 0 0;
+    text-align:center;
+    color:#1c1c1c;
+}
+
+h2{
+    font-size:2.827em;
+    letter-spacing:.05em;
+    line-height: 1em;
+    text-align:center;
+    color:#1c1c1c;
+
+}
+
+h3{
+    font-size:1.999em;
+    line-height: 1.2;
+    margin: 0;
+    text-align:center;
+    margin-bottom:.2em;
+    color:#474747;
+    
+}
+
+h4{
+    font-size:1.414em;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+h5{
+    font-size:1em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+h6{
+    font-size:0.707em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+/* 
+Some browsers use margin-left and some padding-left to indent the list. Pick which one you like (or both) and change them here
+*/
+ul, ol{
+    margin: 0 0 0 0;
+    padding: 1em;
+    list-style:none;
+    text-transform:uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Set the space between items in a list, usually done with margin-bottom */
+li{
+    margin-bottom: 1em;
+}
+
+/*Setting the overall list margin or padding will also effect your nav so make sure you set that specifically.
+You can add other nav styling here if you like such as removing the bullets with list-style none.
+only ul is give here because ol is generally not used with nav
+*/
+nav ul {
+    background-color:#282828;
+    margin-left:0;
+    padding-left:1em;
+    list-style:none;
+}
+
+nav ul li {
+    margin-bottom: 0em; /* adding a margin-bottom setting to li elements can help make them readable */
+    padding:.5em;
+}
+/* Layout styling */
+
+header{
+    background-color:#69D2E7;
+    margin-top:0;
+}
+article {
+    padding: 0 2em 0 2em;
+    width:100%;
+}
+
+section {
+    min-width:450px;
+}
+section:nth-child(odd),
+section:nth-child(even){
+   /* background-color:#d2f1f7;*/
+    margin: 1em 0 1em 0;
+}
+
+/* COLOR - non-track scheduled events: */
+.lunch, .opening,
+.breakfast, .opening-remarks,
+.closing {
+    background-color:#E7E6E1;
+    padding:2em;
+}
+
+section.session1, section.session2,
+section.session3, section.session4 {
+    /*background-color:#69D2E7;*/
+    padding:1em;
+}
+section.track1, section.track2,
+section.track3, section.track4 {
+    color:white;
+    background-color:#ffebd6;    /*medium blue:#4388d1;
+*/
+                                /*dark blue #2E3843;*/
+    padding:2em;
+}
+aside {
+    background-color:white;
+    padding:0;
+}
+footer {
+    padding:5em;
+    margin-top:5em;
+}
+footer, footer>section, footer>section>h4, footer>section>ul,
+footer>section>ul>li,
+footer>aside>h4,
+footer>aside {
+    color:#69D2E7;
+    background-color:#282828;
+    width:100%;
+}
+footer>section {
+    margin:0;
+}
+footer>section>h4 {
+    margin-top:-1.5em;
+}
+footer>section>ul>li {
+    line-height: 1em;
+}
+
+footer a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color:white;
+}
+.goto-top a {
+    border:0;
+    color:#a8a8a8;
+}
+.goto-top p {
+    color:#a8a8a8;
+    border:0;
+    text-align: center;
+    margin-top:2em;
+}
+/*
+definition lists may be given a top and bottom margin by default (dl element)
+and the definition itself (dd element) is usually indented by default with margin-left or padding-left;
+*/
+
+dl{
+    margin: 0 0 0 0;
+}
+
+dd{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+
+/*blockquotes are set off by default using margins or padding.*/
+blockquote{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+/* this removes any quotes a browser might add to blockquote */
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+
+/*figure are set off by default using margins or padding.*/
+figure{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+
+/* Table styling */
+
+/* often you will want to do something with table rows to help users read the table. Bottom borders or alternating background colors are examples */
+tr{
+    
+}
+
+/* Normalize removes all of the padding in tables. you may want to add some to table cells  */
+th{
+    
+}
+
+td{
+    
+}
+
+
+/* Form styling */
+/* because form styling is highly dependent on the individual site no suggestions are given here. Normalize.css does have a number of styles that help give a consistent baseline across browsers.
+
+/*
+---------------------------------------------------------
+Lesser used elements.
+These give some possible styles for lesser used elements. You can delete this section if you know you are not using them
+---------------------------------------------------------
+*/
+
+/* change colours to suit your needs
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}*/
