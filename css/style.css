@@ -34,24 +34,24 @@ This will set the default for the entire site.
 body{
     font-family: 'Roboto Slab', serif; /*change to add a proper font stack */
     font-size: 1em;
-    line-height: 1.3; /* usually something between 1.3 and 1.6 is most readable without feeling too far apart */
+    line-height: 1.5; /* usually something between 1.3 and 1.6 is most readable without feeling too far apart */
     background-color:white;
 
 }
 
 /*Usually at least a bottom margin is given to separate paragraphs. font-size and font-family are inherited from body*/
 p{
-    margin: 0 0 0 0;
+    margin: 0 0 1em 0;
 }
 
 .time {
     font-family:'Josefin Sans', sans-serif;
     color:#FA6900;
-    font-size:1.7em;
+    font-size:1.5em;
     text-transform: uppercase;
     text-align:center;
-    padding:.5em;
-    margin:1em 2em 1em 2em;
+    padding:1em 2em 0 2em;
+    margin:1em;
     border:1px solid #a8a8a8;
     background-color:white;
 }
@@ -59,7 +59,7 @@ p{
     font-family:'Josefin Sans', sans-serif;
     font-size:1.2em;
     letter-spacing: .1em;
-    padding:1em 0 0 0;
+    padding:0 0 1em 0;
     text-transform: uppercase;
     text-align:center;
     color:black;
@@ -71,7 +71,7 @@ p{
     color:#db6104;
     background-color:;
     font-family: 'Roboto Slab', serif;
-    font-size:1.3em;
+    font-size:1.18em;
 }
 
 header>h1 {
@@ -109,7 +109,7 @@ a {
     padding:0;
     font-size:100%;
     vertical-align:baseline;
-    color:white;
+    color:#db6104;
     text-decoration: none; /*this controls if the underline is showing */
     
     /* some people choose to use a bottom border in place of an underline because it doesn't cut through the descenders in letters like gyjp */
@@ -117,17 +117,34 @@ a {
 }
 
 a:hover{
-    color:white;
+    color:#474747;
     /* if you set bottom-border on a{} above then remember to change the color here */
     border-bottom: 3px solid #69D2E7;
 }
 
 /* it can help with usability if you give visited links a diffefrent color than unvisited ones (even if just a different shade)*/
 a:visited{
-    color:white;
+    color:#db6104;
+    text-decoration: none;
     
     /* Again, if you set bottom-border on a{} then remember to change the color here too*/
     /* border-bottom: 1px solid #000; */
+}
+
+nav, ul a,
+nav, ul a:visited {
+    color:white;
+}
+
+nav ul a:hover {
+    color:white;
+    border-bottom: 3px solid #69D2E7;
+}
+
+.present {
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* change border colour to suit your needs */
@@ -155,7 +172,7 @@ When you set the font-size also set the line-height.
 You may also want to set the top and bottom margins and padding
 */
 h1{
-    font-size:3.998em;
+    font-size:3.157em;
     line-height: 1em;
     letter-spacing:.02em;
     padding:1em 0 0 0;
@@ -164,7 +181,7 @@ h1{
 }
 
 h2{
-    font-size:2.827em;
+    font-size:2.369em;
     letter-spacing:.05em;
     line-height: 1em;
     text-align:center;
@@ -173,7 +190,7 @@ h2{
 }
 
 h3{
-    font-size:1.999em;
+    font-size:1.777em;
     line-height: 1.2;
     margin: 0;
     text-align:center;
@@ -183,9 +200,9 @@ h3{
 }
 
 h4{
-    font-size:1.414em;
+    font-size:1.777em;
     line-height: 1.3;
-    margin: 0;
+    margin: 0 0 1em 0;
     padding: 0;
 }
 
@@ -197,7 +214,7 @@ h5{
 }
 
 h6{
-    font-size:0.707em;
+    font-size:0.75em;
     line-height: 1;
     margin: 0;
     padding: 0;
@@ -245,7 +262,7 @@ article {
 }
 
 section {
-    min-width:450px;
+
 }
 section:nth-child(odd),
 section:nth-child(even){
@@ -261,19 +278,12 @@ section:nth-child(even){
     padding:2em;
 }
 
-section.session1, section.session2,
-section.session3, section.session4 {
-    /*background-color:#69D2E7;*/
-    padding:1em;
-}
-section.track1, section.track2,
-section.track3, section.track4 {
-    color:white;
-    background-color:#ffebd6;    /*medium blue:#4388d1;
-*/
-                                /*dark blue #2E3843;*/
+.session {
+    background-color:#ffebd6;
     padding:2em;
+    
 }
+
 aside {
     background-color:white;
     padding:0;
