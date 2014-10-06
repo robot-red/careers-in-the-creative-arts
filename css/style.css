@@ -47,7 +47,7 @@ p{
 .time {
     font-family:'Josefin Sans', sans-serif;
     color:#FA6900;
-    font-size:1.5em;
+    font-size:1.2em;
     text-transform: uppercase;
     text-align:center;
     padding:1em 2em 0 2em;
@@ -57,7 +57,7 @@ p{
 }
 .room {
     font-family:'Josefin Sans', sans-serif;
-    font-size:1.2em;
+    font-size:1.1em;
     letter-spacing: .1em;
     padding:0 0 1em 0;
     text-transform: uppercase;
@@ -69,9 +69,8 @@ p{
 .session-title {
     text-align:center;
     color:#db6104;
-    background-color:;
     font-family: 'Roboto Slab', serif;
-    font-size:1.18em;
+    font-size:1em;
 }
 
 header>h1 {
@@ -84,7 +83,7 @@ header>h1 {
 }
 header>p {
     font-family:'Lato','Helvetica',sans-serif;
-    font-size:1.1em;
+    font-size:1em;
     letter-spacing: .1em;
     font-weight:400;
     text-transform:uppercase;
@@ -172,7 +171,7 @@ When you set the font-size also set the line-height.
 You may also want to set the top and bottom margins and padding
 */
 h1{
-    font-size:3.157em;
+    font-size:2em;
     line-height: 1em;
     letter-spacing:.02em;
     padding:1em 0 0 0;
@@ -181,7 +180,7 @@ h1{
 }
 
 h2{
-    font-size:2.369em;
+    font-size:1.424em;
     letter-spacing:.05em;
     line-height: 1em;
     text-align:center;
@@ -190,7 +189,7 @@ h2{
 }
 
 h3{
-    font-size:1.777em;
+    font-size:1.266em;
     line-height: 1.2;
     margin: 0;
     text-align:center;
@@ -200,7 +199,7 @@ h3{
 }
 
 h4{
-    font-size:1.777em;
+    font-size:1.125em;
     line-height: 1.3;
     margin: 0 0 1em 0;
     padding: 0;
@@ -214,7 +213,7 @@ h5{
 }
 
 h6{
-    font-size:0.75em;
+    font-size:0.889em;
     line-height: 1;
     margin: 0;
     padding: 0;
