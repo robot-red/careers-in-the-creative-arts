@@ -39,6 +39,12 @@ body{
 
 }
 
+img {
+    width:auto;
+    height:auto;
+    max-width:100%;
+}
+
 /*Usually at least a bottom margin is given to separate paragraphs. font-size and font-family are inherited from body*/
 p{
     margin: 0 0 1em 0;
@@ -81,7 +87,7 @@ header>h1 {
     padding:1em 0 0 0;
     margin-top:0em; /* eliminates gap with color block*/
 }
-header>p {
+.tagline, .tagline-date {
     font-family:'Lato','Helvetica',sans-serif;
     font-size:1em;
     letter-spacing: .1em;
@@ -89,8 +95,11 @@ header>p {
     text-transform:uppercase;
     color:#042e40;
     text-align:center;
-    padding: 0 1em 1em 1em;
+    padding: 0;
     margin:0;
+}
+.tagline-date {
+    padding-bottom:1em;
 }
 
 /**
@@ -238,6 +247,8 @@ li{
 You can add other nav styling here if you like such as removing the bullets with list-style none.
 only ul is give here because ol is generally not used with nav
 */
+
+/*
 nav ul {
     background-color:#282828;
     margin-left:0;
@@ -246,10 +257,12 @@ nav ul {
 }
 
 nav ul li {
-    margin-bottom: 0em; /* adding a margin-bottom setting to li elements can help make them readable */
+    margin-bottom: 0em; /* adding a margin-bottom setting to li elements can help make them readable
     padding:.5em;
 }
-/* Layout styling */
+
+*/
+/*******START LAYOUT STYLING BELOW******/
 
 header{
     background-color:#69D2E7;
@@ -269,7 +282,8 @@ section:nth-child(even){
     margin: 1em 0 1em 0;
 }
 
-/* COLOR - non-track scheduled events: */
+/*****START LAYOUT STYLING: SCHEDULE PAGE
+COLOR - non-track scheduled events:*/
 .lunch, .opening,
 .breakfast, .opening-remarks,
 .closing {
@@ -287,33 +301,7 @@ aside {
     background-color:white;
     padding:0;
 }
-footer {
-    padding:5em;
-    margin-top:5em;
-}
-footer, footer>section, footer>section>h4, footer>section>ul,
-footer>section>ul>li,
-footer>aside>h4,
-footer>aside {
-    color:#69D2E7;
-    background-color:#282828;
-    width:100%;
-}
-footer>section {
-    margin:0;
-}
-footer>section>h4 {
-    margin-top:-1.5em;
-}
-footer>section>ul>li {
-    line-height: 1em;
-}
 
-footer a {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color:white;
-}
 .goto-top a {
     border:0;
     color:#a8a8a8;
@@ -324,10 +312,51 @@ footer a {
     text-align: center;
     margin-top:2em;
 }
+
+/*****LAYOUT STYLING - SPEAKERS*****/
+.speaker-tracks {
+    width:100%;
+    margin: 2m 0;
+    padding:1.5em;
+    background-color:pink;
+    
+}
+.speaker { /*individual speaker boxes */ 
+    width:98%;
+    padding:1em;
+    background-color:white;
+    overflow:hidden;
+    clear:both;
+    margin-bottom:2em;
+}
+.speaker-image {
+    width:40%;
+    float:left;
+    padding: 0 10px 0 0;
+}
+.speaker-info {
+    width:100%;
+    /*float:right;*/
+}
+.speaker-info h3{
+    margin-top:0;
+    margin-bottom:.5em;
+    text-align:left;
+}
+
+/*****LAYOUT STYLING - ABOUT*****/
+.direction {
+}
+
+.train {
+}
+
+
 /*
 definition lists may be given a top and bottom margin by default (dl element)
 and the definition itself (dd element) is usually indented by default with margin-left or padding-left;
 */
+
 
 dl{
     margin: 0 0 0 0;
