@@ -1,0 +1,127 @@
+footer {
+    padding:0;
+    margin-top:5em;
+    color:white;
+    background-color:#282828;
+    width:100%;
+}
+.copyright {
+    padding:3em;
+}
+
+/* ============================
+* NAVIGATION 
+* Modified from: http://webdesign.tutsplus.com/tutorials/   htmlcss-tutorials/a-simple-responsive-mobile-first-navigation/
+* =============================*/  
+
+.main_nav{
+clear:both;
+}  
+
+.main_nav ul {
+list-style: none;
+padding:0;
+}
+.main_nav li {
+    margin:0;
+}
+
+.main_nav li a{
+display:block;
+color:#fff;
+background-color: #363636;
+text-transform: uppercase;
+padding: 0.625em; /* 10/16 */
+text-decoration:none;
+font-weight:900;
+}
+
+.main_nav li a:hover{
+color:#555;
+background-color: #fff;
+border-bottom: none;
+}
+
+.main_nav li a:active, li a.current {
+color:#555;
+background-color: #69D2E7;
+}  
+
+/* menu button */
+.menu a {
+padding:0.5em 0.6em 0.2em 0.6em; /*10/16 */
+font-family:'Montserrat', sans-serif;
+text-transform: uppercase;
+background-color: #555;
+background-color: rgba(60,60,60,.8);
+/*border-radius:5px; /* <-- makes button round*/
+color: lightgrey;
+text-decoration:none;
+}
+
+.menu a:hover{
+color:#555;
+background-color:white;
+border-bottom:none;
+}
+
+/*Makes menu fixed 
+.menu{
+margin-bottom:1em;
+position:fixed;
+float: right; 
+}
+*/
+
+
+/* ==========================
+*  Media Queries for Main Nav
+*  ========================== */
+/* these don't have to be separate. We did so for two reasons:
+1. Easy to copy and paste this into new design
+2. Depending on your site you may need separate break points    for the nav. You may want to see what width is needed to fit    your nav horizontally without breaking and use that as the  breakpoint. 
+
+It should also be noted that there is only one media query  because this CSS moves the nav to the top where it can stay     for all of the other sizes.
+*/
+
+/* 648 / 16 */
+@media only screen and (min-width:42.75em) {
+    /* hide the menu button */
+.menu{
+    display:none;
+}
+
+/* move main_nav to top of the screen */
+.main_nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    background-color: #363636;
+}
+
+.main_nav li{
+    display:inline;
+    line-height:1em;
+}
+.main_nav li a{
+    float:left;
+    padding: 0.9375em; /* 10/16  and  15/16 */
+    border-bottom: none;
+}
+.main_nav li a:hover {
+    background-color:#69D2E7;
+}
+
+/* hide the link to top in the nav */
+.main_nav li a.top{
+    display: none;
+}
+
+/* move the rest of the page down accordingly */
+.container{
+margin-top: 2.75em;  /*60 / 16 */ 
+}
+
+} /* end min-width:42.75em */
