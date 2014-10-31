@@ -76,10 +76,10 @@ p{
     text-align:center;
     color:#db6104;
     font-family: 'Roboto Slab', serif;
-    font-size:1em;
+    font-size:1.1em;
 }
 
-header>h1 {
+.con-name {
     font-family:'Montserrat','Helvetica',sans-serif;
     text-align:center;
     color:white;
@@ -180,7 +180,7 @@ When you set the font-size also set the line-height.
 You may also want to set the top and bottom margins and padding
 */
 h1{
-    font-size:2em;
+    font-size:1.em;
     line-height: 1em;
     letter-spacing:.02em;
     padding:1em 0 0 0;
@@ -269,7 +269,7 @@ header{
     margin-top:0;
 }
 article {
-    padding: 0 2em 0 2em;
+    padding: 0;
     width:100%;
 }
 
