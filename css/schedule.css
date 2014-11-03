@@ -1,0 +1,84 @@
+/*****START LAYOUT STYLING: SCHEDULE PAGE
+COLOR - non-track scheduled events:*/
+.lunch, .opening,
+.breakfast, .opening-remarks,
+.closing {
+    background-color:#E7E6E1;
+    padding:2em;
+}
+
+section:nth-child(odd),
+section:nth-child(even){
+   /* background-color:#d2f1f7;*/
+    margin: 1em 0 1em 0;
+}
+
+.session {
+    background-color:#ffebd6;
+    padding:1.5em;
+}
+
+aside {
+    background-color:white;
+}
+.time {
+    font-family:'Lato', sans-serif;
+    font-weight:300;
+    letter-spacing:.09em;
+    color:#FA6900;
+    font-size:1.2em;
+    text-transform: uppercase;
+    text-align:center;
+    margin:1em;
+    padding:1em 1em .5em 1em;
+    background-color:white;
+}
+.room {
+    font-family:'Lato', sans-serif;
+    font-size:1.1em;
+    letter-spacing: .1em;
+    padding:0 0 1em 0;
+    text-transform: uppercase;
+    text-align:center;
+    color:black;
+    
+}
+
+.session-title {
+    text-align:center;
+    color:#db6104;
+    font-family: 'Roboto Slab', serif;
+    font-size:1.1em;
+}
+
+
+/*****LAYOUT STYLING - SPEAKERS*****/
+.speaker-tracks {
+    width:100%;
+    margin: 2m 0;
+    padding:1.5em;
+    background-color:pink;
+    
+}
+.speaker { /*individual speaker boxes */ 
+    width:98%;
+    padding:1em;
+    background-color:white;
+    overflow:hidden;
+    clear:both;
+    margin-bottom:2em;
+}
+.speaker-image {
+    width:40%;
+    float:left;
+    padding: 0 10px 0 0;
+}
+.speaker-info {
+    width:100%;
+    /*float:right;*/
+}
+.speaker-info h3{
+    margin-top:0;
+    margin-bottom:.5em;
+    text-align:left;
+}
