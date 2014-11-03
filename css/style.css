@@ -17,7 +17,6 @@ See this page for more info: http://www.paulirish.com/2012/box-sizing-border-box
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
 
 html {
   box-sizing: border-box;
@@ -39,7 +38,7 @@ body{
 
 }
 
-img {
+img, video {
     width:auto;
     height:auto;
     max-width:100%;
@@ -48,35 +47,6 @@ img {
 /*Usually at least a bottom margin is given to separate paragraphs. font-size and font-family are inherited from body*/
 p{
     margin: 0 0 1em 0;
-}
-
-.time {
-    font-family:'Josefin Sans', sans-serif;
-    color:#FA6900;
-    font-size:1.2em;
-    text-transform: uppercase;
-    text-align:center;
-    padding:1em 2em 0 2em;
-    margin:1em;
-    border:1px solid #a8a8a8;
-    background-color:white;
-}
-.room {
-    font-family:'Josefin Sans', sans-serif;
-    font-size:1.1em;
-    letter-spacing: .1em;
-    padding:0 0 1em 0;
-    text-transform: uppercase;
-    text-align:center;
-    color:black;
-    
-}
-
-.session-title {
-    text-align:center;
-    color:#db6104;
-    font-family: 'Roboto Slab', serif;
-    font-size:1.1em;
 }
 
 .con-name {
@@ -189,7 +159,7 @@ h1{
 }
 
 h2{
-    font-size:1.424em;
+    font-size:1.3em;
     letter-spacing:.05em;
     line-height: 1em;
     text-align:center;
@@ -273,83 +243,6 @@ article {
     width:100%;
 }
 
-section {
-
-}
-section:nth-child(odd),
-section:nth-child(even){
-   /* background-color:#d2f1f7;*/
-    margin: 1em 0 1em 0;
-}
-
-/*****START LAYOUT STYLING: SCHEDULE PAGE
-COLOR - non-track scheduled events:*/
-.lunch, .opening,
-.breakfast, .opening-remarks,
-.closing {
-    background-color:#E7E6E1;
-    padding:2em;
-}
-
-.session {
-    background-color:#ffebd6;
-    padding:2em;
-    
-}
-
-aside {
-    background-color:white;
-    padding:0;
-}
-
-.goto-top a {
-    border:0;
-    color:#a8a8a8;
-}
-.goto-top p {
-    color:#a8a8a8;
-    border:0;
-    text-align: center;
-    margin-top:2em;
-}
-
-/*****LAYOUT STYLING - SPEAKERS*****/
-.speaker-tracks {
-    width:100%;
-    margin: 2m 0;
-    padding:1.5em;
-    background-color:pink;
-    
-}
-.speaker { /*individual speaker boxes */ 
-    width:98%;
-    padding:1em;
-    background-color:white;
-    overflow:hidden;
-    clear:both;
-    margin-bottom:2em;
-}
-.speaker-image {
-    width:40%;
-    float:left;
-    padding: 0 10px 0 0;
-}
-.speaker-info {
-    width:100%;
-    /*float:right;*/
-}
-.speaker-info h3{
-    margin-top:0;
-    margin-bottom:.5em;
-    text-align:left;
-}
-
-/*****LAYOUT STYLING - ABOUT*****/
-.direction {
-}
-
-.train {
-}
 
 
 /*
