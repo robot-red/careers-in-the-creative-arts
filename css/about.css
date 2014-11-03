@@ -1,0 +1,24 @@
+/*****LAYOUT STYLING - ABOUT*****/
+p {
+    padding: 0 1em;
+}
+content-container {
+   margin: 3em;
+}
+.date-time, .location {
+    padding:2em;
+    margin:2em 0;
+    text-align:center;
+    background-color:#ccc;
+}
+
+.direction-type {
+    margin:2em;
+}
+.directions {
+    margin:1em;
+    background-color:pink;
+}
+
+.train {
+}
